@@ -1,2 +1,0 @@
-# CreateCard
-Created with CodeSandbox
