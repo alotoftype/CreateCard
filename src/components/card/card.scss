@@ -1,0 +1,121 @@
+.card {
+    border: 1px solid var(--grey4);
+    font-size: 1.6rem;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 144rem;
+
+    .card-header,
+    .card-item,
+    .card-footer {
+        display: flex;
+    }
+
+    .card-header {
+
+    img {
+        height: 150px;
+        padding:1.6rem;
+        width: 100px;
+        
+
+    }
+    .header-info {
+        width: 60%;
+        .price, .info {
+            display: block;
+        }
+        .title {
+            color: var(--grey9);
+            font-size: 2.0rem;
+            font-weight: bold;
+            margin-bottom: .4rem;
+            margin-top: 1.6rem;
+            .type{
+                font-weight: 400;
+            }
+        }
+        .price {
+            color: var(--green);
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .info {
+            color: var(--primary-color);
+            display: inline-flex;
+            padding-top: 1.6rem;
+            &::before {
+                content: url('https://cdn.glitch.com/bf244f65-c514-428a-b4b2-ac2746281e91/info.svg?1555596324183');
+                
+                padding-right: .4rem;
+               
+            }
+        }
+        
+    }
+    }   
+    
+    .card-body {
+        border: 1px solid var(--grey4);
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+
+    }
+    .card-item {
+        align-items: center;
+        border-bottom: 1px solid var(--grey4);
+        position: relative;
+        @media screen and (min-width: 768px){
+            height: 100px;
+        }
+
+    .card-date,
+    .card-info{
+        height: 50%;
+        padding: 2rem;
+        @media screen and (min-width: 768px){
+            padding: 2.5rem 0;
+        }
+        
+    }
+    .card-info {
+        border-left: 1px solid var(--grey2);
+        text-align: center;
+        width: 50%;
+        @media screen and (min-width: 768px){
+            text-align:start;
+        }
+    }
+    .day,.date {
+        text-align: center
+    }
+    .day {
+        color: var(--grey4);
+        font-weight: bold;
+    }
+    }
+    .card-date{
+
+        width: 50%;
+        @media screen and (min-width: 768px){
+            border-right: 1px solid var(--grey2);
+            width: 10rem;
+        }
+    }
+
+    .card-footer {
+        align-items: center;
+        border-top: 0;
+        height: 5rem;
+        justify-content: center;
+
+        .more {
+            color: var(--primary-color);
+        }
+    }
+    .hidden {
+        display: none;
+      }
+}
+
