@@ -16,7 +16,7 @@ export default class Card extends Component {
     return (
       <div className="card">
         <div className="card-header">
-          <img src="https://via.placeholder.com/200x300" alt="" />
+          <img src="https://cdn.glitch.com/bf244f65-c514-428a-b4b2-ac2746281e91/poster.jpg?1555596324072" alt="" />
           <div className="header-info">
             <p className="title">
               The Phantom of the Opera <span class="type">Tickets</span>
@@ -87,7 +87,7 @@ export default class Card extends Component {
           </div>
         </div>
         <div className="card-footer">
-          <span className="more" onClick={this.handleClick}>{this.state.hidden ? `More Performances (3)` : <p>View Calendar <span><img src="https://cdn.glitch.com/bf244f65-c514-428a-b4b2-ac2746281e91/chevron.svg?1555596324053" alt=""/></span></p>  }</span>
+            {this.state.hidden ? <span className="more" onClick={this.handleClick}>More Performances (3)</span> : <p className="more" onClick={this.handleClick}>View Calendar <span><img src="https://cdn.glitch.com/bf244f65-c514-428a-b4b2-ac2746281e91/chevron.svg?1555596324053" alt=""/></span></p>  }
         </div>
       </div>
     );
