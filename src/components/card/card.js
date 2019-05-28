@@ -19,7 +19,7 @@ export default class Card extends Component {
           <img src="https://cdn.glitch.com/bf244f65-c514-428a-b4b2-ac2746281e91/poster.jpg?1555596324072" alt="" />
           <div className="header-info">
             <p className="title">
-              The Phantom of the Opera <span class="type">Tickets</span>
+              The Phantom of the Opera <span className="type">Tickets</span>
             </p>
             <span className="price">$29.00-$215.00</span>
             <span className="info">Learn More</span>
@@ -61,18 +61,17 @@ export default class Card extends Component {
               <div className="date">Sept 25</div>
             </div>
             <div className="card-info">
-              <span className="btn primary-blue">2:00pm</span>
-              <span className="btn primary-grey">8:00pm</span>
+              <span className="btn primary-grey">7:00pm</span>
             </div>
           </div>
-          <div className={ this.state.hidden ? 'card-item hidden': 'card-item' }>
+          <div className={ this.state.hidden ? 'card-item hidden fade': 'card-item fadeIn' }>
             <div className="card-date">
               <div className="day">Sat</div>
               <div className="date">Sept 26</div>
             </div>
             <div className="card-info">
               <span className="btn primary-blue">2:00pm</span>
-              <span className="btn primary-grey">8:00pm</span>
+              <span className="sold-out">8:00pm</span>
             </div>
           </div>
           <div className={ this.state.hidden ? 'card-item hidden': 'card-item' }>
